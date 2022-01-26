@@ -5,3 +5,5 @@ getId ();
 getEmail ();
 
 getRole ();
+
+getGitHub();
