@@ -1,10 +1,7 @@
 
 const Intern = require('../lib/Intern');
 
-test('Can initiate Employee instance', () => {
-    const e = new Employee();
-    expect(typeof(e)).toBe('object');
-});
+
 
 test('Can get school via constructor arguments', () => {
     const testValue = 'UConn';

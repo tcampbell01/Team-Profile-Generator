@@ -1,10 +1,7 @@
 
 const Manager = require('../lib/Manager');
 
-Test('Can initiate Employee instance', () => {
-    const e = new Employee();
-    expect(typeof(e)).toBe('object');
-});
+
 
 test('Can get office number via constructor arguments', () => {
     const testValue = '10';
