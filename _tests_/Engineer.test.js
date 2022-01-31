@@ -10,6 +10,14 @@ test('Can get GitHub via constructor arguments', () => {
     expect(e.gitHub).toBe(testValue);
 })
 
+test('Can get GitHub username via GitHub()', () => {
+    const testValue = 'tcampbell01';
+    const e = new Employee ('Fred', 12345, 'fred@gmail.com', testValue);
+    expect(e.gitHub).toBe(testValue);
+})
+
+
+
 test('getRole() should return \"Engineer\"', () => {
     const testValue = 'Engineer';
     const e = new Employee(testValue);
