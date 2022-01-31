@@ -131,31 +131,40 @@ const userInputRole = () => {
     type: 'input',
     name: 'continueQuery',
     message: 'Would you like to add another employee? Enter Y or N (Required)',
-    default: false
-}
+},
     ])
+    
     .then(memberInfo => {
-         let { name, email, id, officeNumber, school, gitHub, continueQuery } = memberInfo; 
+         let { name, email, id, role, officeNumber, school, gitHub, continueQuery } = memberInfo; 
          let member;
-        if ((input) =>input.role==='Manager') {
+
+
+        if (role ==='Manager') {
             
           member = new Manager(name, id, email, officeNumber);
-        teamMembers.push(member);
-        console.log(member);
         
-        } else if ((input) =>input.role==='Engineer') {
+        teamMembers.push(member);
+        console.log(teamMembers);
+        
+        } else if (role ==='Engineer') {
              member = new Engineer (name, id, email, gitHub);
-            teamMembers.push(member);
-            console.log(member);
             
-        } else if ((input)=>input.role==="Intern") {
-             member = new Intern(name, id, email, school)
             teamMembers.push(member);
-            console.log(member);
-           
-        } if ((input) => input.continueQuery==='Y') {
+            console.log(teamMembers);
+            
+        } else if (role ==="Intern") {
+             member = new Intern(name, id, email, school)
+          
+            teamMembers.push(member);
+
+            console.log(teamMembers);
+        } 
+    
+
+
+        if (continueQuery==='Y') {
             return userInputRole()
-        } else if ((input) => input.continueQuery==='N') {
+        } else if (continueQuery==='N') {
             return teamMembers;
             
             
