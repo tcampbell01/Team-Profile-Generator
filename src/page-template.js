@@ -19,6 +19,8 @@ const generateTeam = team => {
     `;
     };
 
+    // generateManager();
+
     const generateEngineer = function (engineer) {
         return `
     <div class="col-4 mt-4">
@@ -36,6 +38,8 @@ const generateTeam = team => {
 </div>
 `;
     };
+
+    // generateEngineer();
 
     const generateIntern = function (intern) {
         return `
@@ -55,31 +59,32 @@ const generateTeam = team => {
 `;
     };
 
+    // generateIntern();
+
     const genHTML = [];
 
     genHTML.push(
-        team
-        .filter(employee => employee.getRole() === 'Manager')
+        team.filter(employee => employee.getRole() === 'Manager')
         .map(manager => generateManager(manager))
     );
 
     genHTML.push(
-        team
-        .filter(employee => employee.getRole() === 'Engineer')
+        team.filter(employee => employee.getRole() === 'Engineer')
         .map(engineer => generateEngineer(engineer))
         .join("")
     );
 
 
     genHTML.push(
-        team
-        .filter(employee => employee.getRole() === 'Intern')
+        team.filter(employee => employee.getRole() === 'Intern')
         .map(intern => generateIntern(intern))
         .join("")
 
     );
     return genHTML.join("");
 }
+
+// generateTeam();
 
 
         //HTML template goes here 
@@ -127,5 +132,6 @@ const generateTeam = team => {
         
 
 };
+
 
 
