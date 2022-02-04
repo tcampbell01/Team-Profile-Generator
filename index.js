@@ -4,7 +4,7 @@ const path = require("path");
 const Engineer = require("./lib/Engineer.js");
 const Manager = require("./lib/Manager.js")
 const Intern = require("./lib/Intern.js")
-
+const Employee = require("./lib/Employee")
 
 // const HTML = require("./dist/RenderedHTML.html")
 // const util = require("util");
