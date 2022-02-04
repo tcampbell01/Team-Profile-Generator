@@ -19,72 +19,74 @@ const generateTeam = team => {
     `;
     };
 
-    // generateManager();
+   
 
     const generateEngineer = function (engineer) {
         return `
     <div class="col-4 mt-4">
     <div class="card h-100">
         <div class="card-header">
-            <h3>${engineer.name}</h3>
+            <h3>${engineer.getName()}</h3>
             <i class="fa-regular fa-glasses"></i></i><h4>Engineer</h4>
         </div>
         <div class="card-body">
-            <p class="id">ID: ${engineer.id}</p>
-            <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-            <p class="gitHub">GitHub: ${engineer.github}</p>
-        </div>
+        <ul class = "list-group">
+            <li class="id">ID: ${engineer.getId()}</li>
+            <li class="email">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
+            <li class="gitHub">GitHub: ${engineer.getGitHub()}</li>
+        </ul>
     </div>
 </div>
 `;
     };
 
-    // generateEngineer();
+
 
     const generateIntern = function (intern) {
         return `
     <div class="col-4 mt-4">
     <div class="card h-100">
         <div class="card-header">
-            <h3>${intern.name}</h3>
+            <h3>${intern.getName()}</h3>
             <i class="fa-solid fa-user-graduate"></i></i></i><h4>Intern</h4>
         </div>
         <div class="card-body">
-            <p class="id">ID: ${intern.id}</p>
-            <p class="email">Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
-            <p class="school">School: ${intern.school}</p>
-        </div>
+        <ul class = "list-group">
+            <li class="id">ID: ${intern.getId()}</li>
+            <li class="email">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
+            <li class="school">School: ${intern.getSchool()}</li>
+        </ul>
     </div>
 </div>
 `;
     };
 
-    // generateIntern();
+   
 
-    const genHTML = [];
+    const HTML = [];
 
-    genHTML.push(
-        team.filter(employee => employee.getRole() === 'Manager')
+    HTML.push(team
+        .filter(employee => employee.getRole() === 'Manager')
         .map(manager => generateManager(manager))
     );
 
-    genHTML.push(
-        team.filter(employee => employee.getRole() === 'Engineer')
+    HTML.push(team
+        .filter(employee => employee.getRole() === 'Engineer')
         .map(engineer => generateEngineer(engineer))
         .join("")
     );
 
 
-    genHTML.push(
+    HTML.push(
         team.filter(employee => employee.getRole() === 'Intern')
         .map(intern => generateIntern(intern))
         .join("")
 
     );
-    return genHTML.join("");
+    return HTML.join("");
 }
 
-// generateTeam();
+
 
 
         //HTML template goes here 
