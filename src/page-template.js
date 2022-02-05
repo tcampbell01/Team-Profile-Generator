@@ -3,10 +3,10 @@ const generateTeam = team => {
 
     const generateManager = function (manager) {
         return `
-    <div class="card employeeCard">
-            <div class="card-header">
-                <h3 class =${manager.getName()}</h3>
-                <i class="fa-regular fa-mug-hot"></i><h4>Manager</h4>
+    <div class="col-4 mt-4">
+            <div class="card-header1">
+                <h2>${manager.getName()}</h2>
+                <h4>Manager</h4>
             </div>
             <div class="card-body">
             <ul class = "list-group">
@@ -24,10 +24,9 @@ const generateTeam = team => {
     const generateEngineer = function (engineer) {
         return `
     <div class="col-4 mt-4">
-    <div class="card-header">
-        <div class="card-header">
-            <h3>${engineer.getName()}</h3>
-            <i class="fa-regular fa-glasses"></i></i><h4>Engineer</h4>
+    <div class="card-header2">
+            <h2>${engineer.getName()}</h2>
+            <h4>Engineer</h4>
         </div>
         <div class="card-body">
         <ul class = "list-group">
@@ -45,10 +44,9 @@ const generateTeam = team => {
     const generateIntern = function (intern) {
         return `
     <div class="col-4 mt-4">
-    <div class="card-header">
-        <div class="card-header">
-            <h3>${intern.getName()}</h3>
-            <i class="fa-solid fa-user-graduate"></i></i></i><h4>Intern</h4>
+    <div class="card-header3">
+            <h2>${intern.getName()}</h2>
+            <h4>Intern</h4>
         </div>
         <div class="card-body">
         <ul class = "list-group">
@@ -100,33 +98,41 @@ const generateTeam = team => {
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- CSS only -->
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-                integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-            <link rel="stylesheet" href="stylesheet.css">
-            <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-
-            <title>My Team</title>
+         
+          
+            <link rel="stylesheet" href="../assets/stylesheet.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+           
+           
         </head>
 
+        <header>
+        <div> <h1 class ="text-center">My Team</h1>
+        </div>
+
+
+        
     <body>
 
-        <div class= "container-fluid">
-            <div class = "row">
-                <div class = "col-12 jumbotron mb-4 team-heading">
-                    <h1 class ="text-center">My Team</h1>
-                </div>
-            </div>
-            </div>
+   
+
+       
 
             <div class= "container">
             <div class = "row">
                 <div class = "col-12 team-area d-flex justify-content-center">
+               
                      ${generateTeam(team)}
                 </div>
             </div>
         </div>
 
+
+
+
+
+
+     
      </body>
 
     </html>  

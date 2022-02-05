@@ -1,0 +1,27 @@
+.card-header1 {
+    background-color: blueviolet;
+    font-weight: bold;
+}
+
+.card-header2 {
+    background-color:cadetblue;
+    font-weight:bold;
+}
+
+.card-header3 {
+    background-color:coral;
+    font-weight:bold;
+}
+
+.card-body {
+    border-color: black;
+    border-top:20px;
+    border-bottom:20px;
+    border-left:20px;
+    border-right:20px;
+    border-style:solid;
+}
+
+
+
+
