@@ -340,7 +340,7 @@ const genHTML = () => {
     
 
     function createHTML () {
-        console.log("Your team has been created!")
+        console.log("Check out your new HTML! ")
     
         fs.writeFileSync(outputPath, generateTeam(teamMembers), "utf-8")
     
