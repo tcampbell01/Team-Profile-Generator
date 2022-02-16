@@ -19,7 +19,7 @@ const generateTeam = team => {
     `;
     };
 
-   
+   //create engineer card
 
     const generateEngineer = function (engineer) {
         return `
@@ -39,7 +39,7 @@ const generateTeam = team => {
 `;
     };
 
-
+//create intern card
 
     const generateIntern = function (intern) {
         return `
@@ -59,7 +59,7 @@ const generateTeam = team => {
 `;
     };
 
-   
+   //push cards to an array called HTML
 
     const HTML = [];
 
