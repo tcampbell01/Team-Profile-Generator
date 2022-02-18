@@ -11,7 +11,7 @@ This program requires node.js to be installed as well as a package.json file wit
 
 ## Usage
 
-To generate the "RenderedHTML.html" file you will need to run "node.index.js" in the terminal.  Answer the questions and RenderedHTML will be generated for you. 
+To generate the "RenderedHTML.html" file you will need to run "node index.js" in the terminal.  Answer the questions and RenderedHTML will be generated for you. 
 
 ## Tests
 
