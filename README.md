@@ -27,3 +27,15 @@ Reach me here with questions: [https://github.com/tcampbell01] (https://github.c
 
 
 
+![team profil generator 1](https://user-images.githubusercontent.com/93332105/154702985-9f36781d-8a99-4e52-b93a-8a48f9a8bee3.jpg)
+
+
+![team profile generator 2](https://user-images.githubusercontent.com/93332105/154703019-0b351509-1add-4075-86a3-c5597c8d9c2c.jpg)
+
+
+![team profile generator 3](https://user-images.githubusercontent.com/93332105/154703040-9fdb2142-0739-49d6-b6ed-dc851afbc06f.jpg)
+
+
+![team profile generator 4](https://user-images.githubusercontent.com/93332105/154703054-c2029e3e-4db6-4531-9c62-3080cf32db89.jpg)
+
+
